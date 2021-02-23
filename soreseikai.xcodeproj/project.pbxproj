@@ -15,6 +15,9 @@
 		FB2213CA25E39DAB0037F246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2213C825E39DAB0037F246 /* LaunchScreen.storyboard */; };
 		FB2213D525E39DAB0037F246 /* soreseikaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213D425E39DAB0037F246 /* soreseikaiTests.swift */; };
 		FB2213E025E39DAB0037F246 /* soreseikaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213DF25E39DAB0037F246 /* soreseikaiUITests.swift */; };
+		FB2213F125E53E850037F246 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F025E53E850037F246 /* secondViewController.swift */; };
+		FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F525E543700037F246 /* inputNameViewController.swift */; };
+		FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FA25E54AE20037F246 /* fourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FB2213DB25E39DAB0037F246 /* soreseikaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soreseikaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2213DF25E39DAB0037F246 /* soreseikaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soreseikaiUITests.swift; sourceTree = "<group>"; };
 		FB2213E125E39DAB0037F246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2213F025E53E850037F246 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		FB2213F525E543700037F246 /* inputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputNameViewController.swift; sourceTree = "<group>"; };
+		FB2213FA25E54AE20037F246 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				FB2213C625E39DAB0037F246 /* Assets.xcassets */,
 				FB2213C825E39DAB0037F246 /* LaunchScreen.storyboard */,
 				FB2213CB25E39DAB0037F246 /* Info.plist */,
+				FB2213F025E53E850037F246 /* secondViewController.swift */,
+				FB2213F525E543700037F246 /* inputNameViewController.swift */,
+				FB2213FA25E54AE20037F246 /* fourthViewController.swift */,
 			);
 			path = soreseikai;
 			sourceTree = "<group>";
@@ -258,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2213F125E53E850037F246 /* secondViewController.swift in Sources */,
+				FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */,
+				FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */,
 				FB2213C225E39DA80037F246 /* ViewController.swift in Sources */,
 				FB2213BE25E39DA80037F246 /* AppDelegate.swift in Sources */,
 				FB2213C025E39DA80037F246 /* SceneDelegate.swift in Sources */,

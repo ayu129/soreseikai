@@ -27,6 +27,9 @@
                                 <state key="normal" title="はじめる">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qwN-Rx-Lpk" kind="presentation" modalPresentationStyle="fullScreen" id="G4F-Zx-h4A"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o9i-2y-vxt">
                                 <rect key="frame" x="57" y="164" width="300" height="300"/>
@@ -50,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="nDE-nB-4zM">
             <objects>
-                <viewController id="qwN-Rx-Lpk" sceneMemberID="viewController">
+                <viewController id="qwN-Rx-Lpk" customClass="secondViewController" customModule="soreseikai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GeE-2h-Jaf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,16 +70,20 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9X-yn-VIU">
                                 <rect key="frame" x="47" y="340" width="320" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-JK-nNn">
-                                <rect key="frame" x="132" y="685" width="150" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-JK-nNn">
+                                <rect key="frame" x="132" y="682" width="150" height="60"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="6No-PK-AWj"/>
+                                    <constraint firstAttribute="height" constant="60" id="VfV-C0-MkJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="決定">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lIQ-zp-KXa" kind="presentation" identifier="sendNumberOfPeople" modalPresentationStyle="fullScreen" id="C70-P5-zoo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnS-3Q-4hI"/>
@@ -85,10 +92,14 @@
                             <constraint firstItem="bKg-JK-nNn" firstAttribute="centerX" secondItem="GeE-2h-Jaf" secondAttribute="centerX" id="7MU-Sg-mZE"/>
                             <constraint firstItem="oeh-tc-aPF" firstAttribute="centerX" secondItem="GeE-2h-Jaf" secondAttribute="centerX" id="JtJ-we-QFE"/>
                             <constraint firstItem="m9X-yn-VIU" firstAttribute="centerY" secondItem="GeE-2h-Jaf" secondAttribute="centerY" id="R3r-Zj-NmB"/>
+                            <constraint firstItem="bnS-3Q-4hI" firstAttribute="bottom" secondItem="bKg-JK-nNn" secondAttribute="bottom" constant="120" id="Yd6-I5-zpw"/>
                             <constraint firstItem="oeh-tc-aPF" firstAttribute="top" secondItem="bnS-3Q-4hI" secondAttribute="top" constant="150" id="gBa-16-EPW"/>
                             <constraint firstItem="m9X-yn-VIU" firstAttribute="centerX" secondItem="GeE-2h-Jaf" secondAttribute="centerX" id="ncj-HV-K02"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="m9X-yn-VIU" id="hfr-N6-D0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFr-MB-TzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,10 +433,10 @@
             </objects>
             <point key="canvasLocation" x="1386.9565217391305" y="864.50892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Input Name View Controller-->
         <scene sceneID="Hcw-Cq-atk">
             <objects>
-                <viewController id="lIQ-zp-KXa" sceneMemberID="viewController">
+                <viewController id="lIQ-zp-KXa" customClass="inputNameViewController" customModule="soreseikai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tbY-bu-l1M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,6 +463,9 @@
                                 <state key="normal" title="次の人へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addName" destination="lIQ-zp-KXa" eventType="touchUpInside" id="GAH-5K-611"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V7y-za-7m1"/>
@@ -467,15 +481,20 @@
                             <constraint firstItem="V7y-za-7m1" firstAttribute="bottom" secondItem="HBw-ua-woH" secondAttribute="bottom" constant="150" id="yFi-pu-JwS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="ee2-sm-Jil" id="aee-pB-Gzq"/>
+                        <outlet property="numberLabel" destination="wJG-ga-OSd" id="qM6-Xp-SbW"/>
+                        <segue destination="OGR-D7-8dj" kind="presentation" identifier="completeName" modalPresentationStyle="fullScreen" id="NZI-AY-AOe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03i-1O-znK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1387" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="bI0-3z-abe">
             <objects>
-                <viewController id="OGR-D7-8dj" sceneMemberID="viewController">
+                <viewController id="OGR-D7-8dj" customClass="fourthViewController" customModule="soreseikai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2t-oQ-TnG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -491,6 +510,9 @@
                                 <state key="normal" title="お題を見る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kO3-mJ-TAH" kind="presentation" identifier="showOdai" modalPresentationStyle="fullScreen" id="tOV-CA-3Ff"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-78-2jp">
                                 <rect key="frame" x="57" y="164" width="300" height="300"/>
