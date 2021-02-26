@@ -22,7 +22,6 @@
 		FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F525E543700037F246 /* inputNameViewController.swift */; };
 		FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FA25E54AE20037F246 /* fourthViewController.swift */; };
 		FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */; };
-		FB9B0B0425E66D77009C30E5 /* dataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B0325E66D77009C30E5 /* dataBase.swift */; };
 		FB9B0B1125E85935009C30E5 /* Gojuon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1025E85935009C30E5 /* Gojuon.swift */; };
 		FB9B0B1625E859CA009C30E5 /* Odai.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1525E859CA009C30E5 /* Odai.swift */; };
 		FB9B0B1B25E85B05009C30E5 /* GojuonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */; };
@@ -76,7 +75,6 @@
 		FB2213F525E543700037F246 /* inputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputNameViewController.swift; sourceTree = "<group>"; };
 		FB2213FA25E54AE20037F246 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showOdaiViewController.swift; sourceTree = "<group>"; };
-		FB9B0B0325E66D77009C30E5 /* dataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataBase.swift; sourceTree = "<group>"; };
 		FB9B0B1025E85935009C30E5 /* Gojuon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gojuon.swift; sourceTree = "<group>"; };
 		FB9B0B1525E859CA009C30E5 /* Odai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odai.swift; sourceTree = "<group>"; };
 		FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojuonProtocol.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				FB2213F525E543700037F246 /* inputNameViewController.swift */,
 				FB2213FA25E54AE20037F246 /* fourthViewController.swift */,
 				FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */,
-				FB9B0B0325E66D77009C30E5 /* dataBase.swift */,
 				FB9B0B1025E85935009C30E5 /* Gojuon.swift */,
 				FB9B0B1525E859CA009C30E5 /* Odai.swift */,
 				FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */,
@@ -450,7 +447,6 @@
 				FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */,
 				FB9B0B2A25E8CB0D009C30E5 /* OdaiSeed.swift in Sources */,
 				FB9B0B1B25E85B05009C30E5 /* GojuonProtocol.swift in Sources */,
-				FB9B0B0425E66D77009C30E5 /* dataBase.swift in Sources */,
 				FB9B0B2025E86025009C30E5 /* GojuonSeed.swift in Sources */,
 				FB2213C025E39DA80037F246 /* SceneDelegate.swift in Sources */,
 			);
