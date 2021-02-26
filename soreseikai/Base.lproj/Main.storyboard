@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="699" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Odai View Controller-->
         <scene sceneID="Krg-Jg-Q7T">
             <objects>
-                <viewController id="kO3-mJ-TAH" sceneMemberID="viewController">
+                <viewController id="kO3-mJ-TAH" customClass="showOdaiViewController" customModule="soreseikai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dsA-Cc-cn8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,10 @@
                             <constraint firstItem="vxK-Zc-goP" firstAttribute="top" secondItem="7ws-Ah-Esy" secondAttribute="top" constant="120" id="lle-nO-Dc1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alphabetLabel" destination="Ykk-4Q-zgS" id="gRO-5l-GOL"/>
+                        <outlet property="odaiLabel" destination="TKS-P2-e6L" id="nTB-ZE-FNQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQV-N6-5Ln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -31,7 +31,6 @@ class inputNameViewController: UIViewController {
     @IBAction func addName(){
         index = index + 1
         name.append(nameTextField.text ?? "名無し")
-        print(name)
         if name.count == people{
             performSegueToFourth()
         }else{

@@ -1,32 +1,36 @@
 //
-//  fourthViewController.swift
+//  showOdaiViewController.swift
 //  soreseikai
 //
-//  Created by 伊藤愛結 on 2021/02/23.
+//  Created by 伊藤愛結 on 2021/02/24.
 //
 
 import UIKit
+import RealmSwift
 
-class fourthViewController: UIViewController {
+class showOdaiViewController: UIViewController {
     
     var people: Int!
     var name: [String]!
+    
+    @IBOutlet var alphabetLabel: UILabel!
+    @IBOutlet var odaiLabel: UILabel!
+    
+    let realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
+        let moji = realm.objects(Gojuon.self)
+        let odai = realm.objects(Odai.self)
+        // Do any additional setup after loading the view.
+        print(moji)
     }
     
-    //値を送る
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showOdai"{
-            let showOdaiViewController = segue.destination as! showOdaiViewController
-            showOdaiViewController.people = self.people
-            showOdaiViewController.name = self.name
-        }
-    }
+    
+    
+    
+    
     
     
     

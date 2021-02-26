@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0520732316E6C04DBA5A6EAD /* Pods_soreseikai_soreseikaiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D3C6EF8913DA4A5E9F359B /* Pods_soreseikai_soreseikaiUITests.framework */; };
+		2E48DD041BD8FBA79CC67431 /* Pods_soreseikaiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DC7CFA3DA0E13E4E067F3 /* Pods_soreseikaiTests.framework */; };
+		4DAAC32FA473903E2E83FEC8 /* Pods_soreseikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2835423116DFAD050D507CF7 /* Pods_soreseikai.framework */; };
 		FB2213BE25E39DA80037F246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213BD25E39DA80037F246 /* AppDelegate.swift */; };
 		FB2213C025E39DA80037F246 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213BF25E39DA80037F246 /* SceneDelegate.swift */; };
 		FB2213C225E39DA80037F246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213C125E39DA80037F246 /* ViewController.swift */; };
@@ -18,6 +21,14 @@
 		FB2213F125E53E850037F246 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F025E53E850037F246 /* secondViewController.swift */; };
 		FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F525E543700037F246 /* inputNameViewController.swift */; };
 		FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FA25E54AE20037F246 /* fourthViewController.swift */; };
+		FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */; };
+		FB9B0B0425E66D77009C30E5 /* dataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B0325E66D77009C30E5 /* dataBase.swift */; };
+		FB9B0B1125E85935009C30E5 /* Gojuon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1025E85935009C30E5 /* Gojuon.swift */; };
+		FB9B0B1625E859CA009C30E5 /* Odai.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1525E859CA009C30E5 /* Odai.swift */; };
+		FB9B0B1B25E85B05009C30E5 /* GojuonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */; };
+		FB9B0B2025E86025009C30E5 /* GojuonSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B1F25E86025009C30E5 /* GojuonSeed.swift */; };
+		FB9B0B2525E8C942009C30E5 /* OdaiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B2425E8C942009C30E5 /* OdaiProtocol.swift */; };
+		FB9B0B2A25E8CB0D009C30E5 /* OdaiSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B2925E8CB0D009C30E5 /* OdaiSeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D3C6EF8913DA4A5E9F359B /* Pods_soreseikai_soreseikaiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soreseikai_soreseikaiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA714BC471E4FAC724EA4B1 /* Pods-soreseikai-soreseikaiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikai-soreseikaiUITests.release.xcconfig"; path = "Target Support Files/Pods-soreseikai-soreseikaiUITests/Pods-soreseikai-soreseikaiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26089C6F1DDF2BDAC861141C /* Pods-soreseikai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikai.debug.xcconfig"; path = "Target Support Files/Pods-soreseikai/Pods-soreseikai.debug.xcconfig"; sourceTree = "<group>"; };
+		2835423116DFAD050D507CF7 /* Pods_soreseikai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soreseikai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A74414BF14E8F548D844CF /* Pods-soreseikaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikaiTests.debug.xcconfig"; path = "Target Support Files/Pods-soreseikaiTests/Pods-soreseikaiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D591D3074DE88C0A661F7DF /* Pods-soreseikaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikaiTests.release.xcconfig"; path = "Target Support Files/Pods-soreseikaiTests/Pods-soreseikaiTests.release.xcconfig"; sourceTree = "<group>"; };
+		848DC7CFA3DA0E13E4E067F3 /* Pods_soreseikaiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soreseikaiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9248266AC6D7F904A152A31 /* Pods-soreseikai-soreseikaiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikai-soreseikaiUITests.debug.xcconfig"; path = "Target Support Files/Pods-soreseikai-soreseikaiUITests/Pods-soreseikai-soreseikaiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE34431B1FF0F37FA489310 /* Pods-soreseikai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soreseikai.release.xcconfig"; path = "Target Support Files/Pods-soreseikai/Pods-soreseikai.release.xcconfig"; sourceTree = "<group>"; };
 		FB2213BA25E39DA80037F246 /* soreseikai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soreseikai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2213BD25E39DA80037F246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB2213BF25E39DA80037F246 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +75,14 @@
 		FB2213F025E53E850037F246 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		FB2213F525E543700037F246 /* inputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputNameViewController.swift; sourceTree = "<group>"; };
 		FB2213FA25E54AE20037F246 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
+		FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showOdaiViewController.swift; sourceTree = "<group>"; };
+		FB9B0B0325E66D77009C30E5 /* dataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataBase.swift; sourceTree = "<group>"; };
+		FB9B0B1025E85935009C30E5 /* Gojuon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gojuon.swift; sourceTree = "<group>"; };
+		FB9B0B1525E859CA009C30E5 /* Odai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odai.swift; sourceTree = "<group>"; };
+		FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojuonProtocol.swift; sourceTree = "<group>"; };
+		FB9B0B1F25E86025009C30E5 /* GojuonSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojuonSeed.swift; sourceTree = "<group>"; };
+		FB9B0B2425E8C942009C30E5 /* OdaiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaiProtocol.swift; sourceTree = "<group>"; };
+		FB9B0B2925E8CB0D009C30E5 /* OdaiSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdaiSeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAAC32FA473903E2E83FEC8 /* Pods_soreseikai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E48DD041BD8FBA79CC67431 /* Pods_soreseikaiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0520732316E6C04DBA5A6EAD /* Pods_soreseikai_soreseikaiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02AD75F6FFCFBB9B265F0F7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26089C6F1DDF2BDAC861141C /* Pods-soreseikai.debug.xcconfig */,
+				DEE34431B1FF0F37FA489310 /* Pods-soreseikai.release.xcconfig */,
+				A9248266AC6D7F904A152A31 /* Pods-soreseikai-soreseikaiUITests.debug.xcconfig */,
+				0AA714BC471E4FAC724EA4B1 /* Pods-soreseikai-soreseikaiUITests.release.xcconfig */,
+				45A74414BF14E8F548D844CF /* Pods-soreseikaiTests.debug.xcconfig */,
+				6D591D3074DE88C0A661F7DF /* Pods-soreseikaiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B40C16B29AB230B50EF745A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2835423116DFAD050D507CF7 /* Pods_soreseikai.framework */,
+				07D3C6EF8913DA4A5E9F359B /* Pods_soreseikai_soreseikaiUITests.framework */,
+				848DC7CFA3DA0E13E4E067F3 /* Pods_soreseikaiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB2213B125E39DA80037F246 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +143,8 @@
 				FB2213D325E39DAB0037F246 /* soreseikaiTests */,
 				FB2213DE25E39DAB0037F246 /* soreseikaiUITests */,
 				FB2213BB25E39DA80037F246 /* Products */,
+				02AD75F6FFCFBB9B265F0F7C /* Pods */,
+				1B40C16B29AB230B50EF745A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +171,14 @@
 				FB2213F025E53E850037F246 /* secondViewController.swift */,
 				FB2213F525E543700037F246 /* inputNameViewController.swift */,
 				FB2213FA25E54AE20037F246 /* fourthViewController.swift */,
+				FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */,
+				FB9B0B0325E66D77009C30E5 /* dataBase.swift */,
+				FB9B0B1025E85935009C30E5 /* Gojuon.swift */,
+				FB9B0B1525E859CA009C30E5 /* Odai.swift */,
+				FB9B0B1A25E85B05009C30E5 /* GojuonProtocol.swift */,
+				FB9B0B1F25E86025009C30E5 /* GojuonSeed.swift */,
+				FB9B0B2425E8C942009C30E5 /* OdaiProtocol.swift */,
+				FB9B0B2925E8CB0D009C30E5 /* OdaiSeed.swift */,
 			);
 			path = soreseikai;
 			sourceTree = "<group>";
@@ -144,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB2213E425E39DAB0037F246 /* Build configuration list for PBXNativeTarget "soreseikai" */;
 			buildPhases = (
+				542C048AF2D27029C1321533 /* [CP] Check Pods Manifest.lock */,
 				FB2213B625E39DA80037F246 /* Sources */,
 				FB2213B725E39DA80037F246 /* Frameworks */,
 				FB2213B825E39DA80037F246 /* Resources */,
+				22E586018A9A112E5291B107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB2213E725E39DAB0037F246 /* Build configuration list for PBXNativeTarget "soreseikaiTests" */;
 			buildPhases = (
+				D1BE3D1C899720690A5F0079 /* [CP] Check Pods Manifest.lock */,
 				FB2213CC25E39DAB0037F246 /* Sources */,
 				FB2213CD25E39DAB0037F246 /* Frameworks */,
 				FB2213CE25E39DAB0037F246 /* Resources */,
@@ -179,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB2213EA25E39DAB0037F246 /* Build configuration list for PBXNativeTarget "soreseikaiUITests" */;
 			buildPhases = (
+				71D376794D6A2E715386B58B /* [CP] Check Pods Manifest.lock */,
 				FB2213D725E39DAB0037F246 /* Sources */,
 				FB2213D825E39DAB0037F246 /* Frameworks */,
 				FB2213D925E39DAB0037F246 /* Resources */,
+				02263C791315807AA417B57B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +331,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02263C791315807AA417B57B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soreseikai-soreseikaiUITests/Pods-soreseikai-soreseikaiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soreseikai-soreseikaiUITests/Pods-soreseikai-soreseikaiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soreseikai-soreseikaiUITests/Pods-soreseikai-soreseikaiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22E586018A9A112E5291B107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soreseikai/Pods-soreseikai-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soreseikai/Pods-soreseikai-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soreseikai/Pods-soreseikai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		542C048AF2D27029C1321533 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soreseikai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D376794D6A2E715386B58B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soreseikai-soreseikaiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BE3D1C899720690A5F0079 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soreseikaiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB2213B625E39DA80037F246 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,8 +442,16 @@
 				FB2213F125E53E850037F246 /* secondViewController.swift in Sources */,
 				FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */,
 				FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */,
+				FB9B0B1125E85935009C30E5 /* Gojuon.swift in Sources */,
 				FB2213C225E39DA80037F246 /* ViewController.swift in Sources */,
 				FB2213BE25E39DA80037F246 /* AppDelegate.swift in Sources */,
+				FB9B0B2525E8C942009C30E5 /* OdaiProtocol.swift in Sources */,
+				FB9B0B1625E859CA009C30E5 /* Odai.swift in Sources */,
+				FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */,
+				FB9B0B2A25E8CB0D009C30E5 /* OdaiSeed.swift in Sources */,
+				FB9B0B1B25E85B05009C30E5 /* GojuonProtocol.swift in Sources */,
+				FB9B0B0425E66D77009C30E5 /* dataBase.swift in Sources */,
+				FB9B0B2025E86025009C30E5 /* GojuonSeed.swift in Sources */,
 				FB2213C025E39DA80037F246 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +625,7 @@
 		};
 		FB2213E525E39DAB0037F246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26089C6F1DDF2BDAC861141C /* Pods-soreseikai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +644,7 @@
 		};
 		FB2213E625E39DAB0037F246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE34431B1FF0F37FA489310 /* Pods-soreseikai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +663,7 @@
 		};
 		FB2213E825E39DAB0037F246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A74414BF14E8F548D844CF /* Pods-soreseikaiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +685,7 @@
 		};
 		FB2213E925E39DAB0037F246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D591D3074DE88C0A661F7DF /* Pods-soreseikaiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +707,7 @@
 		};
 		FB2213EB25E39DAB0037F246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9248266AC6D7F904A152A31 /* Pods-soreseikai-soreseikaiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +727,7 @@
 		};
 		FB2213EC25E39DAB0037F246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA714BC471E4FAC724EA4B1 /* Pods-soreseikai-soreseikaiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
