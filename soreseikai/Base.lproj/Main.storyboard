@@ -272,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="699" y="865"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Card View Controller-->
         <scene sceneID="d5l-ob-bJM">
             <objects>
-                <viewController id="gYv-gW-jWh" sceneMemberID="viewController">
+                <viewController id="gYv-gW-jWh" customClass="showCardViewController" customModule="soreseikai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XAZ-8y-rkT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
