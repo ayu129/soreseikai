@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let config = Realm.Configuration(
+
+                schemaVersion: 6,
+
+
+                migrationBlock: { migration, oldSchemaVersion in
+
+                if (oldSchemaVersion < 1) {
+
+                }
+        })
+
+                   Realm.Configuration.defaultConfiguration = config
+        
+        // アプリで使用するdefault.realmのパスを取得
+        let defaultRealmPath = Realm.Configuration.defaultConfiguration.fileURL!
+
+        // 初期データが入ったRealmファイルのパスを取得
+        let bundleRealmPath = Bundle.main.url(forResource: "soreseikai", withExtension: "realm")
+
+        // アプリで使用するRealmファイルが存在しない（= 初回利用）場合は、シードファイルをコピーする
+        if !FileManager.default.fileExists(atPath: defaultRealmPath.path) {
+            do {
+                try FileManager.default.copyItem(at: bundleRealmPath!, to: defaultRealmPath)
+            } catch let error {
+                print("error: \(error)")
+              }
+          }
+        
+        
         return true
     }
 

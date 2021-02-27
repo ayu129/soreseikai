@@ -16,22 +16,71 @@ class showOdaiViewController: UIViewController {
     @IBOutlet var alphabetLabel: UILabel!
     @IBOutlet var odaiLabel: UILabel!
     
-    let realm = try! Realm()
+    @IBOutlet var timerLabel: UILabel!
+    
+    var timer: Timer = Timer()
+    var time: Int = 180
+    
+    var randomAlphabet: Int!
+    var randomOdai: Int!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let moji = realm.objects(Gojuon.self)
-        let odai = realm.objects(Odai.self)
         // Do any additional setup after loading the view.
-        print(moji)
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCount), userInfo: nil, repeats: true)
+        
+        let realm = try! Realm()
+        let alphabetData = realm.objects(Gojuon.self)
+        let odaiData = realm.objects(Odai.self)
+        
+        randomAlphabet = Int.random(in: 0 ..< alphabetData.count)
+        randomOdai = Int.random(in: 0 ..< odaiData.count)
+        
+        odaiLabel.adjustsFontSizeToFitWidth = true
+        
+        alphabetLabel.text = "「" + alphabetData[randomAlphabet].alphabet + "」からはじまる"
+        odaiLabel.text = odaiData[randomOdai].question
     }
     
     
     
     
+    @objc func updateCount(){
+        if time == 0{
+            timer.invalidate()
+            timerLabel.text = "解答を始めてください"
+        }else{
+            let minute = time / 60
+            let second = time % 60
+            timerLabel.text = "シンキングタイムの残り \(minute):" + String(format: "%02d", second)
+            time = time - 1
+        }
+    }
     
     
+    //値を送る
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toInputAnswer"{
+            let inputAnswerViewController = segue.destination as! inputAnswerViewController
+            inputAnswerViewController.people = self.people
+            inputAnswerViewController.name = self.name
+        }
+    }
+    
+    @IBAction func shuffle(){
+        let realm = try! Realm()
+        let alphabetData = realm.objects(Gojuon.self)
+        let odaiData = realm.objects(Odai.self)
+        
+        randomAlphabet = Int.random(in: 0 ..< alphabetData.count)
+        randomOdai = Int.random(in: 0 ..< odaiData.count)
+        
+        alphabetLabel.text = "「" + alphabetData[randomAlphabet].alphabet + "」からはじまる"
+        odaiLabel.text = odaiData[randomOdai].question
+    }
     
     
 
