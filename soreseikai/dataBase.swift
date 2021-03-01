@@ -17,3 +17,10 @@ class Odai: Object{
     @objc dynamic var id = 0
     @objc dynamic var question = ""
 }
+
+
+class Answer: Object{
+    @objc dynamic var alphabetId = 0
+    @objc dynamic var odaiId = 0
+    @objc dynamic var finalAnswer = ""
+}

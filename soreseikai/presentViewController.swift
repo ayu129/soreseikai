@@ -15,6 +15,9 @@ class presentViewController: UIViewController,UITableViewDataSource, UITableView
     var name = [String]()
     var answer = [String]()
     
+    var alphabetId: Int!
+    var odaiId: Int!
+    
     @IBOutlet var table: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +46,8 @@ class presentViewController: UIViewController,UITableViewDataSource, UITableView
             showCardViewController.people = self.people
             showCardViewController.name = self.name
             showCardViewController.answer = self.answer
+            showCardViewController.alphabetId = self.alphabetId
+            showCardViewController.odaiId = self.odaiId
         }
     }
     

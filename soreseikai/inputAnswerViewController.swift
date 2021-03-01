@@ -7,7 +7,7 @@
 
 import UIKit
 
-class inputAnswerViewController: UIViewController {
+class inputAnswerViewController: UIViewController, UITextFieldDelegate {
     
     var people: Int!
     var name: [String]!
@@ -17,12 +17,21 @@ class inputAnswerViewController: UIViewController {
     
     var answer: [String] = []
     var index: Int = 1
+    
+    var alphabetId: Int!
+    var odaiId: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         addAnswerToArray()
+        answerTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     func addAnswerToArray(){
@@ -50,6 +59,8 @@ class inputAnswerViewController: UIViewController {
             presentViewController.people = self.people
             presentViewController.name = self.name
             presentViewController.answer = self.answer
+            presentViewController.alphabetId = self.alphabetId
+            presentViewController.odaiId = self.odaiId
         }
     }
     

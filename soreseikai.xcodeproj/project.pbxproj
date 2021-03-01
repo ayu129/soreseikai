@@ -22,6 +22,9 @@
 		FB2213F625E543700037F246 /* inputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213F525E543700037F246 /* inputNameViewController.swift */; };
 		FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FA25E54AE20037F246 /* fourthViewController.swift */; };
 		FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */; };
+		FB373F4125EB618100A77CCD /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = FB373F4025EB618000A77CCD /* awa.png */; };
+		FB4B179225EBE4D100775608 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B179125EBE4D100775608 /* ResultViewController.swift */; };
+		FB4B179A25EC8D8D00775608 /* showAnotherAnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B179925EC8D8D00775608 /* showAnotherAnswersViewController.swift */; };
 		FB98A3C525E9DBD500D7A5E2 /* soreseikai.realm in Resources */ = {isa = PBXBuildFile; fileRef = FB98A3C425E9DBD500D7A5E2 /* soreseikai.realm */; };
 		FB9B0B3225E8D690009C30E5 /* inputAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B3125E8D690009C30E5 /* inputAnswerViewController.swift */; };
 		FB9B0B3A25E8E6F8009C30E5 /* presentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B0B3925E8E6F8009C30E5 /* presentViewController.swift */; };
@@ -74,6 +77,9 @@
 		FB2213F525E543700037F246 /* inputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputNameViewController.swift; sourceTree = "<group>"; };
 		FB2213FA25E54AE20037F246 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		FB2213FF25E5CABD0037F246 /* showOdaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showOdaiViewController.swift; sourceTree = "<group>"; };
+		FB373F4025EB618000A77CCD /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		FB4B179125EBE4D100775608 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FB4B179925EC8D8D00775608 /* showAnotherAnswersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showAnotherAnswersViewController.swift; sourceTree = "<group>"; };
 		FB98A3C425E9DBD500D7A5E2 /* soreseikai.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = soreseikai.realm; path = Seed/soreseikai.realm; sourceTree = "<group>"; };
 		FB9B0B3125E8D690009C30E5 /* inputAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputAnswerViewController.swift; sourceTree = "<group>"; };
 		FB9B0B3925E8E6F8009C30E5 /* presentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		FB2213BC25E39DA80037F246 /* soreseikai */ = {
 			isa = PBXGroup;
 			children = (
+				FB373F4025EB618000A77CCD /* awa.png */,
 				FB2213BD25E39DA80037F246 /* AppDelegate.swift */,
 				FB2213BF25E39DA80037F246 /* SceneDelegate.swift */,
 				FB2213C125E39DA80037F246 /* ViewController.swift */,
@@ -172,6 +179,8 @@
 				FB9B0B3125E8D690009C30E5 /* inputAnswerViewController.swift */,
 				FB9B0B3925E8E6F8009C30E5 /* presentViewController.swift */,
 				FB9B0B3E25E8FBF3009C30E5 /* showCardViewController.swift */,
+				FB4B179125EBE4D100775608 /* ResultViewController.swift */,
+				FB4B179925EC8D8D00775608 /* showAnotherAnswersViewController.swift */,
 				FBB6739825E9CB8100AC3D5E /* dataBase.swift */,
 			);
 			path = soreseikai;
@@ -306,6 +315,7 @@
 				FB2213CA25E39DAB0037F246 /* LaunchScreen.storyboard in Resources */,
 				FB2213C725E39DAB0037F246 /* Assets.xcassets in Resources */,
 				FB98A3C525E9DBD500D7A5E2 /* soreseikai.realm in Resources */,
+				FB373F4125EB618100A77CCD /* awa.png in Resources */,
 				FB2213C525E39DA80037F246 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,12 +449,14 @@
 				FB2213FB25E54AE20037F246 /* fourthViewController.swift in Sources */,
 				FB2213C225E39DA80037F246 /* ViewController.swift in Sources */,
 				FB2213BE25E39DA80037F246 /* AppDelegate.swift in Sources */,
+				FB4B179A25EC8D8D00775608 /* showAnotherAnswersViewController.swift in Sources */,
 				FB9B0B3F25E8FBF3009C30E5 /* showCardViewController.swift in Sources */,
 				FB22140025E5CABD0037F246 /* showOdaiViewController.swift in Sources */,
 				FB9B0B3225E8D690009C30E5 /* inputAnswerViewController.swift in Sources */,
 				FBB6739925E9CB8100AC3D5E /* dataBase.swift in Sources */,
 				FB2213C025E39DA80037F246 /* SceneDelegate.swift in Sources */,
 				FB9B0B3A25E8E6F8009C30E5 /* presentViewController.swift in Sources */,
+				FB4B179225EBE4D100775608 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +634,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LJ2D52VP2;
 				INFOPLIST_FILE = soreseikai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,6 +654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LJ2D52VP2;
 				INFOPLIST_FILE = soreseikai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

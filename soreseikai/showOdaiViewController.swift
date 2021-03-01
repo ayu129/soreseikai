@@ -67,6 +67,8 @@ class showOdaiViewController: UIViewController {
             let inputAnswerViewController = segue.destination as! inputAnswerViewController
             inputAnswerViewController.people = self.people
             inputAnswerViewController.name = self.name
+            inputAnswerViewController.alphabetId = self.randomAlphabet
+            inputAnswerViewController.odaiId = self.randomOdai
         }
     }
     

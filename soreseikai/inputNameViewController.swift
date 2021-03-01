@@ -7,7 +7,7 @@
 
 import UIKit
 
-class inputNameViewController: UIViewController {
+class inputNameViewController: UIViewController, UITextFieldDelegate {
     
     var people: Int!
     var name: [String] = []
@@ -21,6 +21,13 @@ class inputNameViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         addNameToArray()
+        
+        nameTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     func addNameToArray(){
